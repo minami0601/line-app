@@ -1,0 +1,283 @@
+/* 
+resetCSS------------ */
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+/* 
+body {
+  line-height: 1;
+} */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title],
+dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input,
+select {
+  vertical-align: middle;
+}
+
+html * {
+  box-sizing: border-box;
+}
+
+/* 
+resetCSS------------ //end */
+
+.App {
+  /* フォントを設定する */
+  font-family: "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
+  text-align: center;
+}
+
+/* 
+Stepper------------*/
+.css-qivjh0-MuiStepLabel-label.MuiStepLabel-alternativeLabel {
+  font-weight: 600;
+  font-size: 16px;
+  color: #707070;
+}
+.css-1u4zpwo-MuiSvgIcon-root-MuiStepIcon-root {
+  /* position: relative; */
+  color: #d8d6d6 !important;
+  border: 1px solid #707070;
+  border-radius: 50%;
+}
+.css-1u4zpwo-MuiSvgIcon-root-MuiStepIcon-root.Mui-completed {
+  color: #d8d6d6 !important;
+  border: 1px solid #707070;
+  border-radius: 50%;
+}
+.css-1u4zpwo-MuiSvgIcon-root-MuiStepIcon-root.Mui-completed path {
+  display: none;
+}
+/* Stepper数字消す */
+.css-117w1su-MuiStepIcon-text {
+  fill: #d8d6d6;
+}
+.css-vnkopk-MuiStepLabel-iconContainer {
+  position: relative;
+  z-index: 1;
+  margin-top: 2px;
+}
+.css-vnkopk-MuiStepLabel-iconContainer.Mui-completed {
+  background-color: #d8d6d6;
+  border-radius: 50%;
+}
+.css-vnkopk-MuiStepLabel-iconContainer.Mui-completed::after {
+  position: absolute;
+  content: "";
+  top: 10%;
+  left: 20%;
+  width: 17px;
+  height: 8px;
+  border-left: 3px solid #333;
+  border-bottom: 3px solid #333;
+  transform: rotate(-45deg);
+}
+.css-vnkopk-MuiStepLabel-iconContainer.Mui-completed::before {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+.css-vnkopk-MuiStepLabel-iconContainer:not(.Mui-completed)::before {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+.css-z7uhs0-MuiStepConnector-line {
+  background-color: #d8d6d6;
+  height: 6px;
+  width: calc(100% + 40px);
+  margin-right: -20px;
+  margin-left: -20px;
+  z-index: -1;
+  border-top: 1px solid #707070;
+  border-bottom: 1px solid #707070;
+}
+/* 
+Stepper------------ //end */
+
+/* 
+TextField----------- //end */
+.MuiTextField-root {
+  color: pink !important;
+}
+.css-1d3z3hw-MuiOutlinedInput-notchedOutline {
+  border: none;
+}
+/* 
+TextField------------ //end */
+
+/* ここにはスタイル書かない。インラインでお願いします */
+/* MUIのクラス名にｒスタイルを上書きするにはココに書くしかない？！*/
